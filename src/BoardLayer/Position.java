@@ -16,11 +16,6 @@ public class Position {
     public int getColumn() {
         return column;
     }
-
-    public void setColumn(int column) {
-        this.column = column;
-    }
-
     public int getLine() {
         return line;
     }
@@ -29,9 +24,13 @@ public class Position {
         this.line = line;
     }
 
-    public void SetPosition(int a, int b){
-        this.line = a;
-        this.column = b;
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public void setPosition(int line, int column){
+        this.line = line;
+        this.column = column;
     }
 
     public String toString() {
